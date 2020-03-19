@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Kisal</string>
+    <string name="home">Accueil</string>
+    <string name="stats">Stats</string>
+    <string name="rep_guinee">République de Guinée</string>
+    <string name="infect">Infectés</string>
+    <string name="decede">Décédés</string>
+    <string name="gueris">Guéris</string>
+    <string name="no_item_found">Titre de la vidéo</string>
+    <string name="video">Vidéos</string>
+    <string name="text_phone_number">Numéro de téléphone</string>
+    <string name="indicatif">+224</string>
+    <string name="hint_phone_number">620000000</string>
+    <string name="next">Suivant</string>
+    <string name="dialog_verification_title">Envoie du code de validation</string>
+    <string name="please_wait">Patientez un instant</string>
+    <string name="message_put_phone_number">Saisir votre numéro de téléphone</string>
+    <string name="message_error_phone_number">Le numéro doit être de 9 chiffres</string>
+    <string name="no_internet_connexion">Aucune connexion internet</string>
+    <string name="title_activity_phone_number">Vérification</string>
+    <string name="title_activity_check_code">Validation</string>
+    <string name="network_error">Une erreur inattendue s\'est produite</string>
+    <string name="code_confirmation">Code de confirmation</string>
+    <string name="resend">Re-envoyer</string>
+    <string name="message_code_expired">Ce code de confirmation n\'est plus valide</string>
+    <string name="transation_name">Image transition</string>
+    <string name="close_description">Close</string>
+    <string name="title_activity_full_image">FullScreen</string>
+    <string name="explication_numero">Nous sollicitons votre numéro de téléphone pour vous envoyer des SMS d\'alertes sur la situation du pays. Il n\'est pas obligatoire donc vous pouvez cliquer sur le bouton \"Ignorer\". Si vous le souhaitez</string>
+    <string name="ignorer">Ignorer</string>
+</resources>

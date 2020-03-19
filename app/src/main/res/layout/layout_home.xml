@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_sms"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@android:color/white"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_gradient"
+                android:orientation="horizontal">
+
+                <com.moudjames23.coronanews.customs.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="@string/rep_guinee"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_infectes"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@id/card_sms"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="5dp"
+            android:visibility="invisible"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/infecter"
+                android:padding="5dp">
+
+                <com.moudjames23.coronanews.customs.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="@string/infect"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <com.moudjames23.coronanews.customs.TextViewBold
+                    android:id="@+id/tv_count_infecter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_dead"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/card_infectes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="45dp"
+            android:padding="5dp"
+            android:visibility="invisible"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="10dp"
+
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dead"
+                android:padding="5dp">
+
+                <com.moudjames23.coronanews.customs.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="@string/decede"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <com.moudjames23.coronanews.customs.TextViewBold
+                    android:id="@+id/tv_count_dead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_gueri"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/card_dead"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:visibility="invisible"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gueris"
+                android:padding="5dp">
+
+                <com.moudjames23.coronanews.customs.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="@string/gueris"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <com.moudjames23.coronanews.customs.TextViewBold
+                    android:id="@+id/tv_count_gueris"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_galeries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_gueri"
+            android:layout_margin="8dp"/>
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+
+
