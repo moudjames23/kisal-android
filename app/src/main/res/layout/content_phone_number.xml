@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:font_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +11,7 @@
     tools:context="com.moudjames23.coronanews.PhoneNumberActivity"
     tools:showIn="@layout/activity_phone_number">
 
-    <com.moudjames23.coronanews.customs.TextViewBold
+    <com.moudjames23.coronanews.customs.FontTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/explication_numero"
@@ -19,7 +20,8 @@
         android:gravity="center"
         android:padding="8dp"
         android:textColor="@android:color/white"
-        android:layout_margin="15dp" />
+        android:layout_margin="15dp"
+        font_view:custom_font="NunitoSans-Bold"/>
 
 
 
@@ -40,13 +42,14 @@
             android:orientation="vertical"
             android:background="@android:color/white">
 
-            <com.moudjames23.coronanews.customs.TextViewBold
+            <com.moudjames23.coronanews.customs.FontTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/text_phone_number"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:layout_margin="15dp" />
+                android:layout_margin="15dp"
+                font_view:custom_font="NunitoSans-Bold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,7 +58,7 @@
                 android:weightSum="5"
                 android:layout_margin="15dp">
 
-                <com.moudjames23.coronanews.customs.TextViewRegular
+                <com.moudjames23.coronanews.customs.FontTextView
                     android:layout_width="0dp"
                     android:layout_height="55dp"
                     android:text="@string/indicatif"
@@ -63,7 +66,8 @@
                     android:layout_weight="1.1"
                     android:padding="8dp"
                     android:gravity="center"
-                    android:background="@drawable/design_edittext" />
+                    android:background="@drawable/design_edittext"
+                    font_view:custom_font="NunitoSans_Regular"/>
 
                 <EditText
                     android:id="@+id/edt_phone_number"

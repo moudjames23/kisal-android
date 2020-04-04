@@ -14,7 +14,7 @@ import com.moudjames23.coronanews.MainActivity;
 import com.moudjames23.coronanews.R;
 import com.moudjames23.coronanews.adapter.AdapterStats;
 import com.moudjames23.coronanews.app.Helper;
-import com.moudjames23.coronanews.customs.TextViewBold;
+import com.moudjames23.coronanews.customs.FontTextView;
 import com.moudjames23.coronanews.model.Stats;
 
 import java.util.List;
@@ -30,13 +30,13 @@ public class FragmentInfo extends Fragment {
     public static String TAG = "fragment_info";
 
     @Bind(R.id.tv_count_infecter)
-    TextViewBold tvInfecter;
+    FontTextView tvInfecter;
 
     @Bind(R.id.tv_count_dead)
-    TextViewBold tvdead;
+    FontTextView tvdead;
 
     @Bind(R.id.tv_count_gueris)
-    TextViewBold tvGueris;
+    FontTextView tvGueris;
 
     @Bind(R.id.rv_stats)
     RecyclerView rvStats;

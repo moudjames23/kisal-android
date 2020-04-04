@@ -16,17 +16,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.widget.Toast;
 
-import com.moudjames23.coronanews.FullImageActivity;
 import com.moudjames23.coronanews.MainActivity;
 import com.moudjames23.coronanews.R;
 import com.moudjames23.coronanews.adapter.AdapterGalerie;
 import com.moudjames23.coronanews.app.Constant;
-import com.moudjames23.coronanews.customs.TextViewBold;
+import com.moudjames23.coronanews.customs.FontTextView;
 import com.moudjames23.coronanews.model.Galerie;
 import com.moudjames23.coronanews.model.Stats;
-import com.wang.avi.AVLoadingIndicatorView;
 
 import java.util.List;
 
@@ -41,14 +38,14 @@ public class FragmentHome extends Fragment {
     public static String TAG = "fragment_home";
 
     @Bind(R.id.tv_count_infecter)
-    TextViewBold tvInfecter;
+    FontTextView tvInfecter;
 
 
     @Bind(R.id.tv_count_dead)
-    TextViewBold tvdead;
+    FontTextView tvdead;
 
     @Bind(R.id.tv_count_gueris)
-    TextViewBold tvGueris;
+    FontTextView tvGueris;
 
     @Bind(R.id.card_infectes)
     CardView cardInfecter;
@@ -84,10 +81,9 @@ public class FragmentHome extends Fragment {
 
     public void init(Stats info) {
 
-        tvInfecter.setText(info.getConfirmed() + "");
-        ;
-        tvdead.setText(info.getDeaths() + "");
-        tvGueris.setText(info.getDeaths() + "");
+        tvInfecter.setText(String.valueOf(info.getConfirmed()));
+        tvdead.setText(String.valueOf(info.getDeaths()));
+        tvGueris.setText(String.valueOf(info.getDeaths()));
 
         animation();
     }
@@ -125,17 +121,12 @@ public class FragmentHome extends Fragment {
     }
 
     public Stats defaultCountryInfo(List<Stats> data) {
-        String country = Constant.DEFAULT_COUNTRY;
-
         for (Stats stat : data) {
-            if (stat.getCountryregion().equals(country)) {
+            if (stat.getCountryregion().equals(Constant.DEFAULT_COUNTRY)) {
                 return new Stats(stat.getCountryregion(), stat.getConfirmed(), stat.getTodayCases(), stat.getDeaths(), stat.getRecovered());
             }
         }
-
         return null;
-
-
     }
 
     private void animation() {

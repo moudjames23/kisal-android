@@ -1,6 +1,7 @@
 package com.moudjames23.coronanews.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,6 +16,9 @@ public class Home implements Serializable{
     private List<Stats> stats;
 
     public List<Video> getVideos() {
+        if (videos == null) {
+            videos = new ArrayList<>();
+        }
         return videos;
     }
 
@@ -23,6 +27,10 @@ public class Home implements Serializable{
     }
 
     public List<Galerie> getGaleries() {
+        //initialize only when required
+        if (galeries == null) {
+            galeries = new ArrayList<>();
+        }
         return galeries;
     }
 
@@ -31,6 +39,10 @@ public class Home implements Serializable{
     }
 
     public List<Stats> getStats() {
+        //initialize only when required
+        if (stats == null ){
+            stats = new ArrayList<>();
+        }
         return stats;
     }
 }

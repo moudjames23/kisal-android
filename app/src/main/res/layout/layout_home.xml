@@ -3,6 +3,7 @@
 <android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:font_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="10dp"
@@ -30,14 +31,15 @@
                 android:background="@drawable/background_gradient"
                 android:orientation="horizontal">
 
-                <com.moudjames23.coronanews.customs.TextViewRegular
+                <com.moudjames23.coronanews.customs.FontTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:padding="5dp"
                     android:text="@string/rep_guinee"
                     android:textColor="#fff"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    font_view:custom_font="NunitoSans_Regular"/>
 
             </RelativeLayout>
 
@@ -65,7 +67,7 @@
                 android:background="@drawable/infecter"
                 android:padding="5dp">
 
-                <com.moudjames23.coronanews.customs.TextViewRegular
+                <com.moudjames23.coronanews.customs.FontTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -73,9 +75,10 @@
                     android:text="@string/infect"
                     android:textAllCaps="true"
                     android:textColor="#fff"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    font_view:custom_font="NunitoSans_Regular"/>
 
-                <com.moudjames23.coronanews.customs.TextViewBold
+                <com.moudjames23.coronanews.customs.FontTextView
                     android:id="@+id/tv_count_infecter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -83,7 +86,8 @@
                     android:padding="5dp"
                     android:textColor="#fff"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    font_view:custom_font="NunitoSans-Bold"/>
 
             </RelativeLayout>
 
@@ -114,7 +118,7 @@
                 android:background="@drawable/dead"
                 android:padding="5dp">
 
-                <com.moudjames23.coronanews.customs.TextViewRegular
+                <com.moudjames23.coronanews.customs.FontTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -122,9 +126,10 @@
                     android:text="@string/decede"
                     android:textAllCaps="true"
                     android:textColor="#fff"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    font_view:custom_font="NunitoSans_Regular"/>
 
-                <com.moudjames23.coronanews.customs.TextViewBold
+                <com.moudjames23.coronanews.customs.FontTextView
                     android:id="@+id/tv_count_dead"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -132,7 +137,8 @@
                     android:padding="5dp"
                     android:textColor="#fff"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    font_view:custom_font="NunitoSans-Bold"/>
 
             </RelativeLayout>
 
@@ -159,7 +165,7 @@
                 android:background="@drawable/gueris"
                 android:padding="5dp">
 
-                <com.moudjames23.coronanews.customs.TextViewRegular
+                <com.moudjames23.coronanews.customs.FontTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -167,9 +173,10 @@
                     android:text="@string/gueris"
                     android:textAllCaps="true"
                     android:textColor="#fff"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    font_view:custom_font="NunitoSans_Regular"/>
 
-                <com.moudjames23.coronanews.customs.TextViewBold
+                <com.moudjames23.coronanews.customs.FontTextView
                     android:id="@+id/tv_count_gueris"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -177,7 +184,8 @@
                     android:padding="5dp"
                     android:textColor="#fff"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    font_view:custom_font="NunitoSans_Regular"/>
 
             </RelativeLayout>
 

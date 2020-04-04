@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewCustomFont">
+        <attr name="custom_font" format="enum">
+            <enum name="NunitoSans-Bold" value="0"/>
+            <enum name="NunitoSans-Ligth.ttf" value="1"/>
+            <enum name="NunitoSans_Regular" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>
