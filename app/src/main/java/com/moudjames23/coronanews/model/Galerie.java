@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by admin on 18/03/2020.
  */
-public class Galerie  implements Serializable{
+public class Galerie implements Serializable{
 
     private String image;
 

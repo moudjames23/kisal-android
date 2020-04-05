@@ -10,8 +10,8 @@ import android.widget.ImageView;
 import com.amulyakhare.textdrawable.TextDrawable;
 import com.amulyakhare.textdrawable.util.ColorGenerator;
 import com.moudjames23.coronanews.R;
-import com.moudjames23.coronanews.customs.TextViewBold;
-import com.moudjames23.coronanews.customs.TextViewRegular;
+import com.moudjames23.coronanews.app.Helper;
+import com.moudjames23.coronanews.customs.FontTextView;
 import com.moudjames23.coronanews.model.Stats;
 
 import java.util.List;
@@ -47,8 +47,8 @@ public class AdapterStats extends RecyclerView.Adapter<AdapterStats.VHStats>{
     public class VHStats extends RecyclerView.ViewHolder
     {
 
-        private TextViewBold tvCountry;
-        private TextViewRegular tvStats;
+        private FontTextView tvCountry;
+        private FontTextView tvStats;
         private ImageView img;
 
         public VHStats(View itemView) {
@@ -59,11 +59,10 @@ public class AdapterStats extends RecyclerView.Adapter<AdapterStats.VHStats>{
             img = itemView.findViewById(R.id.img_country);
         }
 
-        public void bind(Stats stats)
-        {
+        public void bind(Stats stats) {
             tvCountry.setText(stats.getCountryregion());
 
-            tvStats.setText("" +stats.message());
+            tvStats.setText(Helper.getStatsMessage(stats));
 
             TextDrawable drawable = TextDrawable.builder()
                     .buildRect(String.valueOf(stats.getCountryregion().charAt(0)), generator.getRandomColor());

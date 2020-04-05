@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:font_view="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -20,7 +21,7 @@
             android:layout_centerVertical="true"
             android:padding="8dp" />
 
-        <com.moudjames23.coronanews.customs.TextViewBold
+        <com.moudjames23.coronanews.customs.FontTextView
             android:id="@+id/tv_countrie"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -32,7 +33,10 @@
             android:text="@string/no_item_found"
             android:textColor="@android:color/black"
             android:textSize="12sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            font_view:custom_font="NunitoSans-Bold"
+
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,7 +47,7 @@
             android:padding="10dp"
             >
 
-            <com.moudjames23.coronanews.customs.TextViewRegular
+            <com.moudjames23.coronanews.customs.FontTextView
                 android:id="@+id/tv_stats"
                 android:layout_weight="1"
                 android:layout_width="0dp"
@@ -51,6 +55,7 @@
                 android:layout_margin="3dp"
                 android:gravity="center"
                 android:text="25"
+                font_view:custom_font="NunitoSans-Ligth.ttf"
                 />
 
 
